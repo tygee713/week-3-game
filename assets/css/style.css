@@ -2,20 +2,23 @@
 body {
 	width: 1000px;
 	font-family: 'VT323', monospace;
+	background-color: black;
+	color: #50D85D;
 }
 
 h1 {
-	font-size: 28px;
-	margin-bottom: 5px;
+	font-size: 34px;
+	margin: 5px;
 }
 
 h2 {
-	font-size: 24px;
-	margin-bottom: 5px;
+	font-size: 28px;
+	margin: 5px;
 }
 
 #head {
 	text-align: center;
+	margin-bottom: 30px;
 }
 #images {
 	width: 50%;
@@ -26,6 +29,7 @@ h2 {
 	width: 50%;
 	float: right;
 	text-align: center;
+	line-height: 30px;
 }
 #box1 {
 	/*border: 1px solid black;*/

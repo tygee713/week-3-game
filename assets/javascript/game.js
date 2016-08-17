@@ -1,15 +1,15 @@
 
 			var words = [
 				'monitor',
-				'desktop',
+				'computer',
 				'headphones',
 				'keyboard',
-				'processor',
+				'projector',
 				'television',
 				'speakers',
 				'subwoofer',
 				'camera',
-				'transistor'
+				'tablet'
 			];
 			// array of words to choose for the game
 
@@ -67,6 +67,8 @@
 									emptyArray[i] = input;
 									$('#wordProgress').html(emptyArray.join(" "));
 									guessMatched = true;
+									var sound = new Audio('assets/sounds/DING.wav');
+									sound.play();
 								}
 							}
 							if (guessMatched == false) {
@@ -81,12 +83,16 @@
 								winCount++;
 								$('#winCount').html("Wins: " + winCount);
 								runGame();
+								var sound = new Audio('assets/sounds/TADA.wav');
+								sound.play();
+								$('#previousWord').html("Previous Word: " + wordPicked);
 								// user wins if the word has been guessed, game restarts
 							}
 							else {
 								lossCount++;
 								$('#lossCount').html("Losses: " + lossCount);
 								runGame();
+								$('#previousWord').html("Previous Word: " + wordPicked);
 								// user loses if the word was not guessed, game starts
 							}
 						}
