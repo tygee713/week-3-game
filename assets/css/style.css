@@ -1,0 +1,38 @@
+
+body {
+	width: 1000px;
+	font-family: 'VT323', monospace;
+}
+
+h1 {
+	font-size: 28px;
+	margin-bottom: 5px;
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 5px;
+}
+
+#head {
+	text-align: center;
+}
+#images {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+#text {
+	width: 50%;
+	float: right;
+	text-align: center;
+}
+#box1 {
+	/*border: 1px solid black;*/
+}
+#box2 {
+	/*border: 1px solid black;*/
+}
+#box3 {
+	/*border: 1px solid black;*/
+}
